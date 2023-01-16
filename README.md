@@ -1,7 +1,13 @@
-# Learn Yocto Projct to Build Custom Embedded Linux
+# Learn Embedded Linux with Yocto Project and Build Custom Embedded Linux
 
-This repo will give you a framework for learning Yocto Project for building custom Embedded Linux for your supported hardware.
+This repo will give you a framework for learning Embedded Linux with Yocto Project. You will learn both Embedded Linux and Yocto Project.
 
-Here I use the BeagleBone Black as hardware reference platform and QEMU for the emulation wherever possible.
+If you follow along you will be able to build and run custom Embedded Linux for your hardware(ofcourse your hardware should be able to run linux).
 
-The repo uses RELEASE : YP CORE - KIRKSTONE 4.0.6 - 2022.12.28
+Here I use the BeagleBone Black as hardware reference platform and QEMU for the emulation.
+
+The repo uses:
+
+1. YP CORE : KIRKSTONE 4.0.6 - 2022.12.28
+2. Hardware : BeagleBone Black Rev4
+3. Build Host : Ubuntu 22.04.1 LTS
