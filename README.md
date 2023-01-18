@@ -1,6 +1,6 @@
 # Learn Embedded Linux with Yocto Project and Build Custom Embedded Linux
 
-![Embedded Linux with Yocto](https://github.com/veereshps1990/embedded_linux_with_yocto/blob/main/docs/pictures/Embedded%20Linux%20with%20Yocto.png)
+![Embedded Linux with Yocto](https://user-images.githubusercontent.com/35962662/213051027-b4661971-b039-45e8-92a5-921cf495f5c8.png)
 
 This project will give you a framework for learning Embedded Linux with Yocto Project. You will learn both Embedded Linux and Yocto Project.
 
