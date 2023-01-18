@@ -1,6 +1,6 @@
 # Yocto Project Quick Build for BBB and QEMU ARM
 
-I refer from Yocto Project documentation for the required information.
+I refer Yocto Project documentation for the required information.
 
 ## Compatible Linux Distribution
 
@@ -44,7 +44,7 @@ The above Git checkout command creates a local branch named my-kirkstone. The fi
 
 The build process creates an entire Linux distribution, including the toolchain, from source. Use following steps to build your image.
 
-### Initialize the Build Environment:
+### Initialize the Build Environment
 
 Run the oe-init-build-env environment setup script to define Yocto Project’s build environment on your build host. You need to be within poky directory.
 
@@ -60,7 +60,7 @@ Once the build environment is setup, a local configuration file named local.conf
 For this example, the defaults are set to build for BeagleBone Black and qemuarm.
 
 MACHINE ?= "beaglebone-yocto"
-MACHINE ?= "qemuarm" 
+MACHINE ?= "qemuarm"
 
 The same can be tested on the hardware and QEMU.
 
@@ -76,8 +76,10 @@ Build an OS image for the target with the following command.
 
 ### Flash the image to BBB and run
 
+The image for the BBB will be present in tmp/deploy/images/beaglebone-yocto.
+
 \$ cd tmp/deploy/images/beaglebone-yocto
 
-make sure to delete all the partition of the sd card
+Make sure to delete all the partition of the sd card.
 
 \$ dd if=core-image-minimal-beaglebone-yocto.wic of=/dev/sdb bs=4M
