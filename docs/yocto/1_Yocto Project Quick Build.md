@@ -32,6 +32,7 @@ Use the following commands to clone the Poky repository.
 Then move to the poky directory and take a look at existing branches:
 
 \$ cd poky
+
 \$ git branch -a
 
 check out the kirkstone branch based as we will be using the Kirkstone release:
@@ -49,6 +50,7 @@ The build process creates an entire Linux distribution, including the toolchain,
 Run the oe-init-build-env environment setup script to define Yocto Project’s build environment on your build host. You need to be within poky directory.
 
 \$ cd poky
+
 \$ source oe-init-build-env
 
 The script also creates build/ directory. Once the script is run your current directory is the build directory. After the build completes, all files created during the build will be preset in this directory.
