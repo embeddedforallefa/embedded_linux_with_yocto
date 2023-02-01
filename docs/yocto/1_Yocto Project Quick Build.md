@@ -62,6 +62,7 @@ Once the build environment is setup, a local configuration file named local.conf
 For this example, the defaults are set to build for BeagleBone Black and qemuarm.
 
 MACHINE ?= "beaglebone-yocto"
+
 MACHINE ?= "qemuarm"
 
 The same can be tested on the hardware and QEMU.
