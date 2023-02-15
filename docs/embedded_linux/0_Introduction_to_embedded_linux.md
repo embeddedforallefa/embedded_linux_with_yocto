@@ -8,6 +8,8 @@ Here we will try to understand:
 
 ## What is Embedded Linux?
 
+![E-Linux](https://user-images.githubusercontent.com/35962662/219097685-86180af1-0a1e-485d-8b75-48ee4725112e.png)
+
 **Embedded Linux is a version of Linux designed for embedded systems**, such as embedded computers, mobile phones and other electronic devices that require a low-footprint operating system.
 
 Linux is mainly used as general-purpose operating system (GPOS) for PC hardware with Intel x86 architecture such as Ubuntu; the one I am using. Linux quickly evolved into a server operating system providing infrastructure for web servers and networking services.
@@ -39,6 +41,8 @@ The phone you are using could be powered by A flavour of Embedded Linux(Android)
 With the rise of Internet of Things, there is a great need for devices which are smart and need to connect with internet. For this, you need an operating system tht is powerful, configurable and has small footprint. Yes, Embedded Linux is the answer.
 
 Some devices that run Embedded Linux include:
+
+![Embedded Linux Devices](https://user-images.githubusercontent.com/35962662/219098075-366e565a-c725-4cc4-b8bb-c8c740faefaf.png)
 
 1. Mobile phones
 2. Smart TVs
