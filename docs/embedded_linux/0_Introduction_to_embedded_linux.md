@@ -51,9 +51,9 @@ To run any flavor of embedded Linux, it usually requires the processor to contai
 
 In general we can classify embedded devices in to 3 categories according to the their size.
 
-1. **small**: Small systems are characterized by a low-powered CPU with a minimum of 4 MB of ROM (normally NOR or even NAND Flash rather than a real ROM) and between
+1. **Small**: Small systems are characterized by a low-powered CPU with a minimum of 4 MB of ROM (normally NOR or even NAND Flash rather than a real ROM) and between
 8 and 16 MB of RAM.
-2. **medium**: Medium-size systems are characterized by a medium-powered CPU with 32 MB or more of ROM (almost always NOR flash, or even NAND Flash on some systems able
+2. **Medium**: Medium-size systems are characterized by a medium-powered CPU with 32 MB or more of ROM (almost always NOR flash, or even NAND Flash on some systems able
 to execute code from block-addressable NAND FLASH memory devices) and 64–128 MB of RAM.
 3. **Large**: Large systems are characterized by a powerful CPU or collection of CPUs combined with large amounts of RAM and permanent storage.
 
