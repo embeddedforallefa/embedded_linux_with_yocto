@@ -21,23 +21,30 @@ Note: Build Host is the system used to build images in a Yocto Project Developme
 
 You must install essential host packages on your build host.
 
-\$ sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
+```rb
+sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
+```
 
 ## Clone Poky
 
 Use the following commands to clone the Poky repository.
 
-\$ git clone git://git.yoctoproject.org/poky
+```rb
+git clone git://git.yoctoproject.org/poky
+```
 
 Then move to the poky directory and take a look at existing branches:
 
-\$ cd poky
-
-\$ git branch -a
+```rb
+cd poky
+git branch -a
+```
 
 check out the kirkstone branch based as we will be using the Kirkstone release:
 
-\$ git checkout -t origin/kirkstone -b my-kirkstone
+```rb
+git checkout -t origin/kirkstone -b my-kirkstone
+```
 
 The above Git checkout command creates a local branch named my-kirkstone. The files available to you in that branch exactly match the repository’s files in the kirkstone release branch.
 
@@ -49,9 +56,10 @@ The build process creates an entire Linux distribution, including the toolchain,
 
 Run the oe-init-build-env environment setup script to define Yocto Project’s build environment on your build host. You need to be within poky directory.
 
-\$ cd poky
-
-\$ source oe-init-build-env
+```rb
+cd poky
+source oe-init-build-env
+```
 
 The script also creates build/ directory. Once the script is run your current directory is the build directory. After the build completes, all files created during the build will be preset in this directory.
 
@@ -71,18 +79,26 @@ The same can be tested on the hardware and QEMU.
 
 Build an OS image for the target with the following command.
 
-\$ bitbake core-image-minimal
+```rb
+bitbake core-image-minimal
+```
 
 ### Simulate Your Image Using QEMU
 
-\$ runqemu qemuarm
+```rb
+runqemu qemuarm
+```
 
 ### Flash the image to BBB and run
 
 The image for the BBB will be present in tmp/deploy/images/beaglebone-yocto.
 
-\$ cd tmp/deploy/images/beaglebone-yocto
+```rb
+cd tmp/deploy/images/beaglebone-yocto
+```
 
 Make sure to delete all the partition of the sd card.
 
-\$ dd if=core-image-minimal-beaglebone-yocto.wic of=/dev/sdb bs=4M
+```rb
+dd if=core-image-minimal-beaglebone-yocto.wic of=/dev/sdb bs=4M
+```
