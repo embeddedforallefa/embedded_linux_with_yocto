@@ -8,6 +8,8 @@ I want to add:
 
 for the minimal linux image which we have.
 
+PS: Here I am using yocto release - Release 4.0 (kirkstone)
+
 ## Add these tools to the append list in local.conf
 
 ```rb
