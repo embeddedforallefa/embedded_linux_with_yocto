@@ -80,6 +80,8 @@ The kernel has three main jobs:
 
 3. To provide an API that offers a useful level of abstraction to user space programs.
 
+![File-System](../pictures/Linux-User-and-Kernel-space.png)
+
 Applications running in **user space** run at a low CPU privilege level. They can do very little other than make library calls. The primary interface between the **user space** and the **kernel space** is the **C library**, which translates user-level functions, such as those defined
 by POSIX, into kernel system calls. 
 
