@@ -151,4 +151,4 @@ Using Yocto project one can build all the components needed for an embedded Linu
 2. Bootloader.
 3. Kernel.
 4. Root filesystem.
-5. Software development kit.
+5. Software development kit(SDK).
