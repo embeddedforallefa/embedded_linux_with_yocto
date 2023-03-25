@@ -142,3 +142,13 @@ Some of the Applications are:
 1. Navigation
 2. Sensor data capture
 3. Controlling an actuator and many more.
+
+For developing applications you need software development kit(SDK) as it is more convenient to use SKD for cross platform development.
+
+Using Yocto project one can build all the components needed for an embedded Linux product.
+
+1. Toolchain.
+2. Bootloader.
+3. Kernel.
+4. Root filesystem.
+5. Software development kit.
