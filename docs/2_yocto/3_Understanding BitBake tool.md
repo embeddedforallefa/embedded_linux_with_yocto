@@ -1,10 +1,19 @@
-# Generate SDK for application development
+# Understating the BitBake tool
 
-Software Development Kit(SDK) is necessary if you want to develop applications on your development host for the target device.
+We will understand:
 
-This method of compiling application is called cross-compilation.
+1. metadata concept and how recipes depend on each other, and are used by Poky
+2. how BitBake downloads every needed source code package and how these packages are stored in the directory used
+to build.
+3. 
 
-## Generate SKD using Yocto
+## What is bitbake tool?
+
+BitBake is a task scheduler that parses Python and the shell script mixed code. 
+
+The code parsed generates and runs tasks that may have a complex dependency chain, which is scheduled to allow a parallel execution and maximize the use of computational resources.
+
+BitBake can be understood as a tool similar to GNU Make in some aspects.
 
 It is very straightforward to generate SDK using Yocto project. We just have to pass "-c populate_sdk" parameter to the bitbake.
 
