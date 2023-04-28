@@ -1,8 +1,10 @@
 # Yocto Project Quick Build for BBB and QEMU ARM
 
-I refer Yocto Project documentation for the required information.
-
 ## Compatible Linux Distribution
+
+The recommended way to develop an embedded Linux system is using a native Linux workstation.
+
+Yocto builds all the components mentioned before from scratch, including the cross-compilation toolchain and the native tools it needs, so the Yocto build process is demanding in terms of processing power and both hard drive space and I/O.
 
 Make sure your Build Host meets the following requirements:
 
@@ -17,15 +19,17 @@ Make sure your Build Host meets the following requirements:
 
 Note: Build Host is the system used to build images in a Yocto Project Development environment.
 
-## Build Host Packages
+## Install Host Packages
 
 You must install essential host packages on your build host.
 
 ```rb
-sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
+sudo apt-get install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
 ```
 
-## Clone Poky
+The preceding command will use apt-get, the **Advanced Packaging Tool (APT)**, command-line tool. It is a frontend of the **dpkg** package manager that is included in the Ubuntu distribution. It will install all the required packages and their dependencies to support all the features of the Yocto project.
+
+## Install Poky
 
 Use the following commands to clone the Poky repository.
 

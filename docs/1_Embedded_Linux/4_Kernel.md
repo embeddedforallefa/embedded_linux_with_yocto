@@ -12,8 +12,7 @@ The kernel has three main jobs:
 
 ![File-System](../pictures/Linux-User-and-Kernel-space.png)
 
-Applications running in **user space** run at a low CPU privilege level. They can do very little other than make library calls. The primary interface between the **user space** and the **kernel space** is the **C library**, which translates user-level functions, such as those defined
-by POSIX, into kernel system calls. 
+Applications running in **user space** run at a low CPU privilege level. They can do very little other than make library calls. The primary interface between the **user space** and the **kernel space** is the **C library**, which translates user-level functions, such as those defined by POSIX, into kernel system calls. 
 
 The system call interface uses an architecture-specific
 method, such as a trap or a software interrupt, to switch the CPU from low-privilege user mode to high-privilege kernel mode, which allows access to all memory addresses and

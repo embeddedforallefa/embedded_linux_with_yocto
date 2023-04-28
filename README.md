@@ -8,7 +8,7 @@ If you follow along you will be able to build and run custom Embedded Linux for 
 
 Here I use the BeagleBone Black as hardware reference platform and QEMU for the emulation.
 
-The project uses:
+The Course uses:
 
 1. YP CORE : KIRKSTONE 4.0.6 - 2022.12.28
 2. Hardware : BeagleBone Black Rev4
