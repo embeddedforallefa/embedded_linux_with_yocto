@@ -1,4 +1,4 @@
-# Source Directory Structure
+# Source Directory Structure - Yocto Project
 
  The Source Directory consists of numerous files, directories and subdirectories; understanding their locations and contents is key to using the Yocto Project effectively.
 
