@@ -120,11 +120,11 @@ It is best to have a custom layer to add this recipe instead of adding to existi
 
 ### Create and Add a layer
 
-Let's create a layer called "meta-iot-support" where we will add all the required tools to this layer. Using below commands we create and add the layer.
+Let's create a layer called "meta-iot-support-bbb" where we will add all the required tools to this layer. Using below commands we create and add the layer.
 
 ```rb
-\$ bitbake-layers create-layer ../meta-iot-support
-\$ bitbake-layers add-layer ../meta-iot-support
+\$ bitbake-layers create-layer ../meta-iot-support-bbb
+\$ bitbake-layers add-layer ../meta-iot-support-bbb
 \$ bitbake-layers show-layers
 ```
 
